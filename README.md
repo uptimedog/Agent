@@ -1,14 +1,27 @@
 <p align="center">
     <img alt="Agent Logo" src="/assets/logo.png" height="120" />
     <h3 align="center">Uptimedog Agent</h3>
+    <p align="center">
+        <a href="https://travis-ci.com/Uptimedog/Agent"><img src="https://travis-ci.com/Uptimedog/Agent.svg?branch=master"></a>
+        <a href="https://github.com/Uptimedog/Agent/releases"><img src="https://img.shields.io/badge/Version-0.0.1-red.svg"></a>
+        <a href="https://goreportcard.com/report/github.com/Uptimedog/Agent"><img src="https://goreportcard.com/badge/github.com/Uptimedog/Agent?v=0.0.1"></a>
+        <a href="https://github.com/Uptimedog/Agent/blob/master/LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-orange.svg"></a>
+    </p>
 </p>
 
 
 ## Installation
 
+Download [the latest agent binary.](https://github.com/Uptimedog/Agent/releases)
 
+```zsh
+$ curl -sL https://github.com/Uptimedog/Agent/releases/download/x.x.x/Agent_x.x.x_OS.tar.gz | tar xz
 ```
-#
+
+Start the agent and it will auto register itself using your API key
+
+```zsh
+$ ./agent run --api_key xxxxxxxx > agent.log
 ```
 
 
