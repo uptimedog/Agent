@@ -1,0 +1,10 @@
+# API Server Configs
+api_server_url: ${UD_API_SERVER_URL:-https://api.uptimedog.io}
+api_key: ${UD_API_KEY:-https://api.uptimedog.io}
+
+# Log level, it can be debug, info, warn, error, panic, fatal
+log_level: ${UD_AGENT_LOG_LEVEL:-warn}
+# output can be stdout or abs path to log file /var/logs/ud_agent.log
+log_output: ${UD_AGENT_LOG_OUTPUT:-stdout}
+# Format can be json
+log_format: ${UD_AGENT_LOG_FORMAT:-json}
