@@ -1,6 +1,6 @@
 # API Server Configs
 api_server_url: ${UD_API_SERVER_URL:-https://api.uptimedog.io}
-api_key: ${UD_API_KEY:-https://api.uptimedog.io}
+api_key: ${UD_API_KEY:-xxxxxxxxxxxxxxxx}
 
 # Log level, it can be debug, info, warn, error, panic, fatal
 log_level: ${UD_AGENT_LOG_LEVEL:-warn}
