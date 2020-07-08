@@ -11,7 +11,11 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var config string
+// Verbose var
+var Verbose bool
+
+// APIKey var
+var APIKey string
 
 var rootCmd = &cobra.Command{
 	Use: "agent",
@@ -19,6 +23,17 @@ var rootCmd = &cobra.Command{
 
 Uptimedog and the agent is in early stages of development, and we'd love to hear your
 feedback at <https://github.com/Uptimedog/agent>`,
+}
+
+func init() {
+	rootCmd.PersistentFlags().BoolVarP(&Verbose, "verbose", "v", false, "verbose output")
+	rootCmd.PersistentFlags().StringVarP(
+		&APIKey,
+		"api_key",
+		"k",
+		"",
+		"Your Uptimedog API Key",
+	)
 }
 
 // Execute runs cmd tool
