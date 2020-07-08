@@ -5,7 +5,11 @@
 package main
 
 import (
+	"os"
+
 	"github.com/uptimedog/agent/cmd"
+
+	log "github.com/sirupsen/logrus"
 )
 
 var (
@@ -20,6 +24,11 @@ func main() {
 	cmd.Commit = commit
 	cmd.Date = date
 	cmd.BuiltBy = builtBy
+
+	log.SetOutput(os.Stdout)
+	log.SetLevel(log.InfoLevel)
+	log.SetFormatter(&log.JSONFormatter{})
+	//log.SetFormatter(&log.TextFormatter{})
 
 	cmd.Execute()
 }
