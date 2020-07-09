@@ -3,7 +3,7 @@
     <h3 align="center">Uptimedog Agent</h3>
     <p align="center">
         <a href="https://travis-ci.com/Uptimedog/Agent"><img src="https://travis-ci.com/Uptimedog/Agent.svg?branch=master"></a>
-        <a href="https://github.com/Uptimedog/Agent/releases"><img src="https://img.shields.io/badge/Version-0.0.2-red.svg"></a>
+        <a href="https://github.com/Uptimedog/Agent/releases"><img src="https://img.shields.io/badge/Version-0.0.3-red.svg"></a>
         <a href="https://goreportcard.com/report/github.com/Uptimedog/Agent"><img src="https://goreportcard.com/badge/github.com/Uptimedog/Agent?v=0.0.1"></a>
         <a href="https://github.com/Uptimedog/Agent/blob/master/LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-orange.svg"></a>
     </p>
