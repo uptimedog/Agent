@@ -27,7 +27,7 @@ var runCmd = &cobra.Command{
 
 		for {
 			log.Info("Agent running")
-			log.Debug("Add -k for verbose logs")
+			log.Debug("Add -v for verbose logs")
 			time.Sleep(1 * time.Second)
 		}
 	},
