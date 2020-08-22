@@ -15,13 +15,13 @@
 Download [the latest agent binary.](https://github.com/Uptimedog/Agent/releases)
 
 ```zsh
-$ curl -sL https://github.com/Uptimedog/Agent/releases/download/x.x.x/Agent_x.x.x_OS.tar.gz | tar xz
+$ curl -sL https://github.com/Uptimedog/Agent/releases/download/x.x.x/agent_x.x.x_OS.tar.gz | tar xz
 ```
 
 Start the agent and it will auto register itself using your API key
 
 ```zsh
-$ ./agent run --api_key xxxxxxxx > agent.log
+$ ./agent run --api_server uptimedog.io --api_key xxxxxxxx > agent.log
 ```
 
 
