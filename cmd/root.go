@@ -17,6 +17,9 @@ var Verbose bool
 // APIKey var
 var APIKey string
 
+// APIServer var
+var APIServer string
+
 var rootCmd = &cobra.Command{
 	Use: "agent",
 	Short: `Monitor internal services with uptimedog agent
@@ -35,7 +38,7 @@ func init() {
 		"Your Uptimedog API Key",
 	)
 	rootCmd.PersistentFlags().StringVarP(
-		&APIKey,
+		&APIServer,
 		"api_server",
 		"a",
 		"https://uptimedog.io",

@@ -5,6 +5,7 @@
 package cmd
 
 import (
+	"fmt"
 	"time"
 
 	log "github.com/sirupsen/logrus"
@@ -23,7 +24,11 @@ var runCmd = &cobra.Command{
 			panic("Uptimedog API Key is required")
 		}
 
-		log.Info("Start the agent")
+		if APIServer == "" {
+			panic("Uptimedog API Server is required")
+		}
+
+		log.Info(fmt.Sprintf("Start the agent, Remote server is %s", APIServer))
 
 		for {
 			log.Info("Agent running")
