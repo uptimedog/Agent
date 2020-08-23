@@ -34,6 +34,13 @@ func init() {
 		"",
 		"Your Uptimedog API Key",
 	)
+	rootCmd.PersistentFlags().StringVarP(
+		&APIKey,
+		"api_server",
+		"a",
+		"https://uptimedog.io",
+		"Uptimedog remote server",
+	)
 }
 
 // Execute runs cmd tool

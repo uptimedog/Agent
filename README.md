@@ -21,7 +21,7 @@ $ curl -sL https://github.com/Uptimedog/Agent/releases/download/x.x.x/agent_x.x.
 Start the agent and it will auto register itself using your API key
 
 ```zsh
-$ ./agent run --api_server uptimedog.io --api_key xxxxxxxx > agent.log
+$ ./agent run --api_server https://uptimedog.io --api_key xxxxxxxx > agent.log
 ```
 
 
