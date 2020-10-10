@@ -1,12 +1,12 @@
 module github.com/uptimedog/agent
 
-go 1.17
+go 1.20
 
 require (
 	github.com/franela/goblin v0.0.0-20211003143422-0a4f594942bf
 	github.com/hashicorp/go-envparse v0.1.0
 	github.com/sirupsen/logrus v1.9.3
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.0
 )
 
 require (
