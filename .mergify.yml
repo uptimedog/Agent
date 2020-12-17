@@ -1,36 +1,28 @@
 ---
 pull_request_rules:
-  -
-    actions:
+  - actions:
       merge:
         method: squash
     conditions:
       - author!=Clivern
       - approved-reviews-by=Clivern
-      - label=merge
-      - status-success=Travis CI - Pull Request
-      - status-success=Travis CI - Branch
+      - label=release
     name: "Automatic Merge 🚀"
-  -
-    actions:
+  - actions:
       merge:
         method: merge
     conditions:
       - author=Clivern
-      - label=merge
+      - label=release
     name: "Automatic Merge 🚀"
-  -
-    actions:
+  - actions:
       merge:
         method: squash
     conditions:
       - "author=renovate[bot]"
-      - label=merge
-      - status-success=Travis CI - Pull Request
-      - status-success=Travis CI - Branch
+      - label=release
     name: "Automatic Merge for Renovate PRs 🚀"
-  -
-    actions:
+  - actions:
       comment:
         message: "Nice! PR merged successfully."
     conditions:
