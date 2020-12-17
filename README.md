@@ -2,10 +2,18 @@
     <img alt="Agent Logo" src="/assets/logo.png" height="120" />
     <h3 align="center">Uptimedog Agent</h3>
     <p align="center">
-        <a href="https://travis-ci.com/Uptimedog/Agent"><img src="https://travis-ci.com/Uptimedog/Agent.svg?branch=master"></a>
-        <a href="https://github.com/Uptimedog/Agent/releases"><img src="https://img.shields.io/badge/Version-0.1.0-red.svg"></a>
-        <a href="https://goreportcard.com/report/github.com/Uptimedog/Agent"><img src="https://goreportcard.com/badge/github.com/Uptimedog/Agent?v=0.1.0"></a>
-        <a href="https://github.com/Uptimedog/Agent/blob/master/LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-orange.svg"></a>
+        <a href="https://github.com/Uptimedog/Agent/actions/workflows/build.yml">
+            <img src="https://github.com/Uptimedog/Agent/actions/workflows/build.yml/badge.svg"/>
+        </a>
+        <a href="https://github.com/Uptimedog/Agent/releases">
+            <img src="https://img.shields.io/badge/Version-0.1.0-red.svg">
+        </a>
+        <a href="https://goreportcard.com/report/github.com/Uptimedog/Agent">
+            <img src="https://goreportcard.com/badge/github.com/Uptimedog/Agent?v=0.1.0">
+        </a>
+        <a href="https://github.com/Uptimedog/Agent/blob/master/LICENSE">
+            <img src="https://img.shields.io/badge/LICENSE-MIT-orange.svg">
+        </a>
     </p>
 </p>
 
