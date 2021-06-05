@@ -5,30 +5,30 @@
 package main
 
 import (
-	"os"
+    "os"
 
-	"github.com/uptimedog/agent/cmd"
+    "github.com/uptimedog/agent/cmd"
 
-	log "github.com/sirupsen/logrus"
+    log "github.com/sirupsen/logrus"
 )
 
 var (
-	version = "dev"
-	commit  = "none"
-	date    = "unknown"
-	builtBy = "unknown"
+    version = "dev"
+    commit  = "none"
+    date    = "unknown"
+    builtBy = "unknown"
 )
 
 func main() {
-	cmd.Version = version
-	cmd.Commit = commit
-	cmd.Date = date
-	cmd.BuiltBy = builtBy
+    cmd.Version = version
+    cmd.Commit = commit
+    cmd.Date = date
+    cmd.BuiltBy = builtBy
 
-	log.SetOutput(os.Stdout)
-	log.SetLevel(log.InfoLevel)
-	log.SetFormatter(&log.JSONFormatter{})
-	//log.SetFormatter(&log.TextFormatter{})
+    log.SetOutput(os.Stdout)
+    log.SetLevel(log.InfoLevel)
+    log.SetFormatter(&log.JSONFormatter{})
+    //log.SetFormatter(&log.TextFormatter{})
 
-	cmd.Execute()
+    cmd.Execute()
 }

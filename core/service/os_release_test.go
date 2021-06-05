@@ -5,34 +5,34 @@
 package service
 
 import (
-	"fmt"
-	"testing"
+    "fmt"
+    "testing"
 
-	"github.com/uptimedog/agent/pkg"
+    "github.com/uptimedog/agent/pkg"
 
-	"github.com/franela/goblin"
+    "github.com/franela/goblin"
 )
 
 // TestUnitOsRelease
 func TestUnitOsRelease(t *testing.T) {
-	g := goblin.Goblin(t)
+    g := goblin.Goblin(t)
 
-	g.Describe("#OsRelease", func() {
-		g.It("It should satisfy test cases", func() {
-			path := fmt.Sprintf(
-				"%s/cache/os-release",
-				pkg.GetBaseDir("cache"),
-			)
+    g.Describe("#OsRelease", func() {
+        g.It("It should satisfy test cases", func() {
+            path := fmt.Sprintf(
+                "%s/cache/os-release",
+                pkg.GetBaseDir("cache"),
+            )
 
-			result, err := GetOsRelease([]string{path})
+            result, err := GetOsRelease([]string{path})
 
-			g.Assert(result.Name).Equal("Ubuntu")
-			g.Assert(err).Equal(nil)
+            g.Assert(result.Name).Equal("Ubuntu")
+            g.Assert(err).Equal(nil)
 
-			result, err = GetOsRelease([]string{"/etc/not-found"})
+            result, err = GetOsRelease([]string{"/etc/not-found"})
 
-			g.Assert(result.Name).Equal("")
-			g.Assert(err.Error()).Equal("open /etc/not-found: no such file or directory")
-		})
-	})
+            g.Assert(result.Name).Equal("")
+            g.Assert(err.Error()).Equal("open /etc/not-found: no such file or directory")
+        })
+    })
 }
