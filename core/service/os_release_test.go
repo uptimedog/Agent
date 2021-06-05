@@ -29,10 +29,10 @@ func TestUnitOsRelease(t *testing.T) {
 			g.Assert(result.Name).Equal("Ubuntu")
 			g.Assert(err).Equal(nil)
 
-			result, err = GetOsRelease([]string{})
+			result, err = GetOsRelease([]string{"/etc/not-found"})
 
 			g.Assert(result.Name).Equal("")
-			g.Assert(err.Error()).Equal("open /etc/os-release: no such file or directory")
+			g.Assert(err.Error()).Equal("open /etc/not-found: no such file or directory")
 		})
 	})
 }
