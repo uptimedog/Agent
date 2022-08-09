@@ -1,6 +1,6 @@
 module github.com/uptimedog/agent
 
-go 1.14
+go 1.19
 
 require (
 	github.com/sirupsen/logrus v1.2.0
