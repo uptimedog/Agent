@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Agent Logo" src="/assets/logo.png" height="120" />
+    <img alt="Agent Logo" src="logo.png" height="120" />
     <h3 align="center">Uptimedog Agent</h3>
     <p align="center">
         <a href="https://github.com/Uptimedog/Agent/actions/workflows/build.yml">
