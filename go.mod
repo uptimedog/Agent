@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/franela/goblin v0.0.0-20211003143422-0a4f594942bf
 	github.com/hashicorp/go-envparse v0.1.0
-	github.com/sirupsen/logrus v1.9.1
+	github.com/sirupsen/logrus v1.9.2
 	github.com/spf13/cobra v1.7.0
 )
 
